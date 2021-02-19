@@ -75,15 +75,30 @@ form {
   font-style: normal;
   font-weight: 700;
   font-size: 8;
+  border: 3px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20.7974px;
+  background: none;
+  padding: 5px 40px 5px 40px;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 10%;
-  margin: o auto;
+  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.btn1:disabled {
+  opacity: 30%;
+}
+
+.btn1--active {
+  opacity: 100%;
 }
 
 /* poppins-regular - latin - PARA TITULOS*/
@@ -136,6 +151,8 @@ body {
   height: auto;
   border-radius: 20px;
   padding: 30px;
+  margin: 0 250px;
+  opacity: .5;
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
@@ -149,12 +166,23 @@ body {
 .card:hover .card_back {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  opacity: 1;
+}
+
+.card--active .card_back {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
 }
 
 .card_title {
   color: #D3736B;
   text-align: center;
   font-size: 30px;
+}
+
+.card * {
+  pointer-events: none;
 }
 
 h2 {
@@ -238,5 +266,9 @@ p {
   height: 958px;
   left: 1346px;
   top: 340px;
+}
+
+.inactive {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

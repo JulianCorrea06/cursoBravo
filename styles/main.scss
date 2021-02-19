@@ -33,7 +33,6 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 
@@ -50,8 +49,11 @@ body{
     height: auto;
     border-radius: 20px;
     padding: 30px;
+    margin: 0 250px;
+    opacity: .5;
 
-    transition: transform .3s;
+    transition: transform .3s ;
+    
 
         img{
             width: 150px;
@@ -60,14 +62,29 @@ body{
     &:hover{
         .card_back{
             transform: scale(1.1);
+            opacity: 1;
         }
     }
+
+    &--active{
+        .card_back{
+            transform: scale(1.1);
+            opacity: 1;
+        }
+    }
+
+
 
     &_title{
     color: #D3736B;
     text-align: center;
     font-size: 30px;
     }
+
+    *{
+        pointer-events: none;
+    }
+    
 }
 
 h2{
@@ -135,5 +152,9 @@ p{
             
         }
 
+}
+
+.inactive{
+    display: none;
 }
 

@@ -18,33 +18,58 @@
     
     <section class="content">
 
-
-    <form>
-        <label for="name">Nombre</label>
-        <input class="input" type="text" placeholder="Julián David Correa" id="name">
-        <div>        
-        <!-- 
-            <h4>Género</h4>
-        <div class="radio__container">x
-            <div>
-                <input type="radio" name="gender" id="male">
-                <label for="male">Hombre</label>
+        <div class="card gender_option">
+            <div class="card_back">
+                <img  src="./assets/images/girl.png" alt="">
+    
+                <h2 class="card_title">GIRL</h2>
             </div>
-            <div>
-                <input type="radio" name="gender" id="female">
-                <label for="male">Mujer</label>
-            </div>
-        </div>   
-        -->
-
         </div>
-        <label for="name">Edad</label>
-        <input class="input" type="numbre" placeholder="¿Cuántos años tienes?" id="name">
-        <label for="name">Hobby</label>
-        <input class="input" type="text" placeholder="¿Qué haces en ratos libres?" id="name">
+    
+        <div class="card gender_option">
+            <div class="card_back">
+                <img  src="./assets/images/nino.png" alt="">
+    
+                <h2 class="card_title">BOY</h2>
+    
+            </div>
+    
+        </div>
+    
+        
+    
+    </section>
 
 
-    </form>
+    <section class="content inactive"  >
+
+
+        <form>
+            <label for="name">Nombre</label>
+            <input class="input" type="text" placeholder="Julián David Correa" id="name">
+            <div>        
+            <!-- 
+                <h4>Género</h4>
+                <div class="radio__container">x
+                <div>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Hombre</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="female">
+                    <label for="male">Mujer</label>
+                </div>
+                </div>   
+            -->
+
+            </div>
+            <label for="name">Edad</label>
+            <input class="input" type="numbre" placeholder="¿Cuántos años tienes?" id="name">
+            <label for="name">Hobby</label>
+            <input class="input" type="text" placeholder="¿Qué haces en ratos libres?" id="name">
+
+
+        </form>
 
     <div class="card">
         <div class="card_back">
@@ -60,12 +85,14 @@
 
     </section>
 
-    <button class=btn1>Create</button>
+    <button class=btn1 disabled>Create</button>
 
     <div class="circulo circulo--first"></div>
     <div class="circulo circulo--second"></div>
     <div class="circulo circulo--third"></div>
 
+
+    <script src="./scripts/index.js"></script>
 </body>
 
     
