@@ -1,0 +1,22 @@
+//Colors
+$primary: #841f1f;
+$secondary: #CD2E2E;
+
+
+//Fonts
+$montserrat: 'Montserrat', sans-serif;
+
+
+//Breakpoints (Estandarizados por bootstrap)
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extraLarge: 1200px;
+
+//Mixins
+
+@mixin flex-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
