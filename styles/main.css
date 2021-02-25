@@ -90,7 +90,11 @@ form {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 80px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 .btn1:disabled {
@@ -99,6 +103,15 @@ form {
 
 .btn1--active {
   opacity: 100%;
+}
+
+.btn1:focus {
+  outline: none;
+}
+
+.btn1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* poppins-regular - latin - PARA TITULOS*/
@@ -119,7 +132,7 @@ body {
 }
 
 .mainTitle {
-  margin: 160px auto 40px auto;
+  margin: 100px auto 80px auto;
   text-align: center;
   font-size: 40px;
 }

@@ -14,7 +14,9 @@
     width: 100%;
     width: fit-content;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 80px;
+
+    transition: transform .3s ;
 
 
     &:disabled{
@@ -23,5 +25,14 @@
 
     &--active{
         opacity: 100%;
+    }
+
+    &:focus{
+        outline:none;
+    }
+
+    &:hover{
+        transform: scale(1.1);
+        
     }
 }
